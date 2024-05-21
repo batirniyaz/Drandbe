@@ -24,7 +24,7 @@ class AboutModel(models.Model):
 class OurPartnersModel(models.Model):
     name = models.CharField(max_length=100)
     logo = models.ImageField(upload_to='partners/')
-    url = models.URLField(max_length=200, default='https://araltech.tech/')
+    url = models.URLField(max_length=200, default='https://drandbe/')
 
     def __str__(self):
         return self.name
