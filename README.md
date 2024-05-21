@@ -30,7 +30,7 @@ To run the website locally, follow these steps:
 ### Prepare the Environment
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Diyarbekoralbaev/company_website_django.git
+    https://github.com/batirniyaz/Dranbe.git
     ```
 2. Set up a virtual environment:
     ```bash
