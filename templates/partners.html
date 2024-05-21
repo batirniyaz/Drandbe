@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <main id="main">
+
+        <!-- ======= Partners Section ======= -->
+        <section id="partners" class="clients">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>Partners</h2>
+                    <p>Our partners who have supported us so far</p>
+                </div>
+            <div class="marquee-container">
+                <marquee behavior="scroll" direction="left" scrollamount="5" data-aos-delay="0"
+                >
+                    <div style="display: flex;align-items: center;justify-content: center;gap: 150px;">
+                        {% for partner in partners %}
+                            <a href="{{ partner.url }}" target="_blank">
+                                <img src="{{ partner.logo.url }}" class="img-fluid" alt="">
+                                <p style="padding-top: 15px; text-align: center; font-size: 15px;">
+                                    <strong>{{ partner.name }}</strong>
+                                </p>
+                            </a>
+                        {% endfor %}
+                        {% for partner in partners %}
+                            <a href="{{ partner.url }}" target="_blank">
+                                <img src="{{ partner.logo.url }}" class="img-fluid" alt="">
+                                <p style="padding-top: 15px; text-align: center; font-size: 15px;">
+                                    <strong>{{ partner.name }}</strong>
+                                </p>
+                            </a>
+                        {% endfor %}
+                        {% for partner in partners %}
+                            <a href="{{ partner.url }}" target="_blank">
+                                <img src="{{ partner.logo.url }}" class="img-fluid" alt="">
+                                <p style="padding-top: 15px; text-align: center; font-size: 15px;">
+                                    <strong>{{ partner.name }}</strong>
+                                </p>
+                            </a>
+                        {% endfor %}
+                        {% for partner in partners %}
+                            <a href="{{ partner.url }}" target="_blank">
+                                <img src="{{ partner.logo.url }}" class="img-fluid" alt="">
+                                <p style="padding-top: 15px; text-align: center; font-size: 15px;">
+                                    <strong>{{ partner.name }}</strong>
+                                </p>
+                            </a>
+                        {% endfor %}
+                        {% for partner in partners %}
+                            <a href="{{ partner.url }}" target="_blank">
+                                <img src="{{ partner.logo.url }}" class="img-fluid" alt="">
+                                <p style="padding-top: 15px; text-align: center; font-size: 15px;">
+                                    <strong>{{ partner.name }}</strong>
+                                </p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </marquee>
+            </div>
+        </section><!-- End Partners Section -->
+
+    </main>
+
+{% endblock %}

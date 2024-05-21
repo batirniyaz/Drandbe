@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<style>
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-30px);
+        }
+        60% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .error__title {
+        animation: bounce 1s ease;
+    }
+
+    .error__button {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .error__button:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="text-center">
+        <h1 class="error__title display-1 text-danger">404</h1>
+        <p class="error__text lead"><b><strong>Oops!</strong></b> <strong>You have come to an empty page. Please go back so you don't get lost.</strong></p>
+        <a href="{% url 'home' %}" class="error__button btn btn-primary btn-lg">Go to Home</a>
+    </div>
+</div>
+
+<script src="{% static 'js/404.js' %}"></script>
+{% endblock %}

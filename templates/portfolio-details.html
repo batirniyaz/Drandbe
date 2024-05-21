@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block title %}Project Details{% endblock %}
+{% block content %}
+    {% load static %}
+
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs">
+            <div class="page-header d-flex align-items-center">
+                <div class="container position-relative">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h2>Portfolio Details</h2>
+                            <p>You can see the details of the project here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li>Portfolio Details</li>
+                    </ol>
+                </div>
+            </nav>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container" data-aos="fade-up">
+
+                <div class="position-relative h-100">
+                    <div class="slides-1 portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="{{ project.image.url }}" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+
+                <div class="row justify-content-between gy-4 mt-4">
+
+                    <div class="col-lg-8">
+                        <div class="portfolio-description">
+                            <h2>{{ project.title }}</h2>
+                            <p>
+                                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi
+                                labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque
+                                itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur
+                                dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                            </p>
+                            <p>
+                                {{ project.description }}
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="portfolio-info">
+                            <h3>Project information</h3>
+                            <ul>
+                                <li><strong>Category</strong> <span>{{ project.category }}</span></li>
+                                <li><strong>Client</strong> <span>{{ project.client }}</span></li>
+                                <li><strong>Project date</strong> <span>{{ project.created_at }}</span></li>
+                                <li><strong>Project URL</strong> <a href="#">{{ project.url }}</a></li>
+                                <li><a href="{{ project.url }}" class="btn-visit align-self-start">Visit Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Details Section -->
+
+    </main><!-- End #main -->
+
+{% endblock %}

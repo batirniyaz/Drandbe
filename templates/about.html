@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <main id="main">
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h2>About Us</h2>
+                    <p>{{ about.description }}</p>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <h3>Who we are</h3>
+                        <img src="{% static 'img/team_pic.jpg' %}" class="img-fluid rounded-4 mb-4" alt="">
+                        <p>We are the Company who makes good websites and mobile applications</p>
+                        <p><strong>Our Genesis:</strong> We are a mosaic of talent and passion, each member handpicked
+                            for their unique
+                            skills and unyielding dedication. Founded under the spirit of exploration and the pursuit of
+                            excellence, Drandbe is more than a group—it’s a movement.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content ps-0 ps-lg-5">
+                            <p class="fst-italic">
+                                Why us? Because we are the future. We are the architects of tomorrow, the pioneers of
+                            </p>
+                            <ul>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    In the pursuit of innovation, we are not afraid to challenge the status quo
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    We are not just a team but a dynamic force poised to redefine the entrepreneurial
+                                    landscape
+                                </li>
+                                <li><i class="bi bi-check-circle-fill"></i>
+                                    We are a mosaic of talent and passion, each member handpicked for their unique
+                                    skills and unyielding dedication
+                                </li>
+                            </ul>
+                            <p>
+                                <strong>Our Mission:</strong> At Drandbe, we dream big. Our primary ambition is to be
+                                the architects of
+                                the future, constructing startups that not only challenge the status quo but also shape
+                                the very fabric of industry. Our ultimate quest is to transform these ventures into a
+                                standalone powerhouse—a beacon of innovation and a testament to the potential of
+                                youthful creativity.
+                            </p>
+
+                            <div class="position-relative mt-4">
+                                <img src="{% static 'img/about-2.jpg' %}" class="img-fluid rounded-4" alt="">
+                                <a href="{{ about.youtube }}" class="glightbox play-btn"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+    </main>
+
+{% endblock %}

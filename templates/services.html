@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+    <main id="main">
+
+        <!-- ======= Our Services Section ======= -->
+        <section id="services" class="services sections-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Explore our wide range of services.</p>
+                </div>
+                <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                    {% for service in services %}
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item position-relative d-flex flex-column">
+                                <div class="icon">
+                                    <img src="{{ service.icon.url }}" class="img-fluid" alt="">
+                                </div>
+                                <h3>{{ service.title }}</h3>
+                                <p class="flex-grow-1">{{ service.description }}</p>
+                                <a href="#" class="readmore mt-auto stretched-link">Read more <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div><!-- End Service Item -->
+                    {% endfor %}
+                </div>
+            </div>
+        </section><!-- End Our Services Section -->
+    
+    </main>
+
+{% endblock %}
