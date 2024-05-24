@@ -8,7 +8,7 @@ Welcome to the Drandbe company website repository. Drandbe is a company speciali
 - **About Page:** Information about the company's history and mission.
 - **Partners Page:** Details about our partners.
 - **Services Page:** Information on services offered.
-- **Portfolio Page:** Showcases projects completed by Araltech.
+- **Portfolio Page:** Showcases projects completed by Drandbe.
 - **Team Page:** Introduces the team members.
 - **Contact Page:** Provides contact information.
 - **Responsive Design:** Accessible on various devices.
@@ -30,7 +30,7 @@ To run the website locally, follow these steps:
 ### Prepare the Environment
 1. Clone the repository:
     ```bash
-    https://github.com/batirniyaz/Dranbe.git
+    https://github.com/batirniyaz/Drandbe.git
     ```
 2. Set up a virtual environment:
     ```bash
