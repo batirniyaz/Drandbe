@@ -30,7 +30,7 @@ To run the website locally, follow these steps:
 ### Prepare the Environment
 1. Clone the repository:
     ```bash
-    https://github.com/batirniyaz/Drandbe.git
+    git clone https://github.com/batirniyaz/Drandbe.git
     ```
 2. Set up a virtual environment:
     ```bash
